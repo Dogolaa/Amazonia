@@ -40,6 +40,7 @@
     {"name":"spr_player_walk","order":3,"path":"sprites/spr_player_walk/spr_player_walk.yy",},
     {"name":"obj_menu","order":5,"path":"objects/obj_menu/obj_menu.yy",},
     {"name":"Room3","order":2,"path":"rooms/Room3/Room3.yy",},
+    {"name":"obj_proj_end","order":14,"path":"objects/obj_proj_end/obj_proj_end.yy",},
     {"name":"spr_enemy2_idle","order":14,"path":"sprites/spr_enemy2_idle/spr_enemy2_idle.yy",},
     {"name":"spr_player_idle","order":2,"path":"sprites/spr_player_idle/spr_player_idle.yy",},
   ],
