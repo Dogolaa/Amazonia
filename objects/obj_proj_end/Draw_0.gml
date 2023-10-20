@@ -1,9 +1,9 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
+draw_self()
 
-speed *= 0.9
-depth = 201
-image_xscale *= 0.99
+speed *= 0.7
+image_xscale = max(image_xscale * 0.9, 0.8)
 image_yscale = image_xscale
 
 if place_meeting(x, y, obj_parede){

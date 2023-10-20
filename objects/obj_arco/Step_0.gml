@@ -1,11 +1,12 @@
+
 if(instance_exists(weapon_id)){
 	x = weapon_id.x;
 	y = weapon_id.y + 7;
 	
 	
-	weapon_x = x + lengthdir_x(16,weapon_dir);
-	weapon_y = y + lengthdir_y(16,weapon_dir);
-	
+	weapon_x = x + lengthdir_x(12,weapon_dir);
+	weapon_y = y + lengthdir_y(8,weapon_dir);
+	depth = obj_player.depth - angle_difference(image_angle, 180)
 	
 	image_angle = weapon_dir;
 	

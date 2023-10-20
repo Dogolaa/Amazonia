@@ -7,7 +7,7 @@ max_velc = 3
 vida = 100
 max_vida = 100
 
-my_weapon = instance_create_layer(x , y , "Weapons", obj_arco);
+my_weapon = instance_create_depth(x , y , depth, obj_arco);
 my_weapon.weapon_id = self;
 
 camera_follower = instance_create_depth(x, y, depth, obj_cam_follower)
