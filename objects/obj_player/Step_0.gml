@@ -11,7 +11,7 @@ var teclas_sair = (tecla_sair != 0);
 
 
 	if (distance_to_object(obj_saida) <= dist_saida && tecla_sair != 0) {
-		room_goto_next();
+		room_restart();
 	}
 
 
@@ -27,7 +27,41 @@ if(teclas != 0) {
 	sprite_index = spr_player_idle;
 }
 
-move_dir = point_direction(0, 0, tecla_direita - tecla_esquerda, tecla_baixo - tecla_cima);
+if tecla_cima{
+	vspeed -= acc
+}
+if tecla_direita{
+	hspeed += acc
+}
+if tecla_esquerda{
+	hspeed -= acc
+}
+if tecla_baixo{
+	vspeed += acc
+}
+if !teclas{
+	speed *=0.8
+}
+
+breaking = 20
+while (place_meeting(x + hspeed, y, obj_parede) && breaking>0){
+	breaking--
+	hspeed *= 0.9
+	if breaking <=1{ hspeed = 0 }
+}
+breaking = 20
+while (place_meeting(x + hspeed, y+vspeed, obj_parede) && breaking>0){
+	breaking--
+	vspeed *= 0.9
+	if breaking <=1{ vspeed = 0 }
+}
+
+speed = min(speed, max_velc)
+if place_meeting(x, y, obj_parent_enemy){
+	speed = min(speed, max_velc*0.3)
+}
+
+/*move_dir = point_direction(0, 0, tecla_direita - tecla_esquerda, tecla_baixo - tecla_cima);
 
 velh = lengthdir_x(velc * teclas, move_dir);
 velv = lengthdir_y(velc * teclas, move_dir);
@@ -53,6 +87,7 @@ if (place_meeting(x, y + velv, obj_parede))
 }
 
 y += velv;
+*/
 
 with(my_weapon){
 	
@@ -71,4 +106,7 @@ with(my_weapon){
 }
 
 
-
+//coisas da vida//
+if vida <=0 {
+	game_end()
+}

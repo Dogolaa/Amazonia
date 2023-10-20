@@ -1,6 +1,6 @@
 if(instance_exists(obj_player)){
 	
-	x = lerp(x,target.x - cam_largura / 2 ,cam_velc);
+	/*x = lerp(x,target.x - cam_largura / 2 ,cam_velc);
 	y = lerp(y,target.y - cam_altura / 2,cam_velc);
 	
 	
@@ -9,7 +9,9 @@ if(instance_exists(obj_player)){
 	
 	
 	
-	camera_set_view_pos(view_camera[0],x,y);
+	camera_set_view_pos(view_camera[0],x,y);*/
+	camera_set_view_target(view_camera[0], obj_cam_follower)
+	camera_set_view_border(view_camera[0], 999, 999)
 	
 }else{
 	target = -1;
