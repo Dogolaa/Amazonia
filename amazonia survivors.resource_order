@@ -17,7 +17,6 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"Sprite16","order":17,"path":"sprites/Sprite16/Sprite16.yy",},
     {"name":"obj_camera","order":2,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"spr_enemy2_walk","order":15,"path":"sprites/spr_enemy2_walk/spr_enemy2_walk.yy",},
     {"name":"spr_arco","order":10,"path":"sprites/spr_arco/spr_arco.yy",},
