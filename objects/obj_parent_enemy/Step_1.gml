@@ -1,3 +1,5 @@
+if(!global.pause){
+
 
 
 var range = 100; // Declare a variável 'range' antes do switch
@@ -22,6 +24,7 @@ switch (estado) {
         break;
 
     case "seguindo_jogador":
+	
         sprite_index = meu_spr_walk;
         var x1 = x;
         var y1 = y;
@@ -91,6 +94,8 @@ hit_alpha = lerp(hit_alpha, 0, 0.1);
 
 if (life <= 0) {
     instance_destroy();
+}
+exit;
 }
 
 

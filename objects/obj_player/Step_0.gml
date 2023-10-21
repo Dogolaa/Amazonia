@@ -1,3 +1,13 @@
+if(global.pause){
+	
+	hspeed = 0;
+    vspeed = 0;
+	exit;
+
+}
+
+
+
 var tecla_direita = keyboard_check(ord("D"));
 var tecla_esquerda = keyboard_check(ord("A"));
 var tecla_cima = keyboard_check(ord("W"));
