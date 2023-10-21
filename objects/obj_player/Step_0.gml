@@ -9,57 +9,67 @@ var dist_saida = 5;
 var tecla_sair = keyboard_check(ord("E"));
 var teclas_sair = (tecla_sair != 0);
 
-
-	if (distance_to_object(obj_saida) <= dist_saida && tecla_sair != 0 && instance_number(obj_parent_enemy) == 0) {
-		room_restart();
-	}
-
-depth = -y
-
-
-
-
-if(velh != 0) image_xscale = sign(velh);
-
-if(teclas != 0) {
-	sprite_index = spr_player_walk;
-}else{
-	sprite_index = spr_player_idle;
+if (distance_to_object(obj_saida) <= dist_saida && tecla_sair != 0 && instance_number(obj_parent_enemy) == 0) {
+    room_restart();
 }
 
-if tecla_cima{
-	vspeed -= acc
-}
-if tecla_direita{
-	hspeed += acc
-}
-if tecla_esquerda{
-	hspeed -= acc
-}
-if tecla_baixo{
-	vspeed += acc
-}
-if !teclas{
-	speed *=0.8
+depth = -y;
+
+if (velh != 0) {
+    image_xscale = sign(velh);
 }
 
-breaking = 20
-while (place_meeting(x + hspeed, y, obj_parede) && breaking>0){
-	breaking--
-	hspeed *= 0.9
-	if breaking <=1{ hspeed = 0 }
-}
-breaking = 20
-while (place_meeting(x + hspeed, y+vspeed, obj_parede) && breaking>0){
-	breaking--
-	vspeed *= 0.9
-	if breaking <=1{ vspeed = 0 }
+if (teclas != 0) {
+    sprite_index = spr_player_walk;
+} else {
+    sprite_index = spr_player_idle;
 }
 
-speed = min(speed, max_velc)
-if place_meeting(x, y, obj_parent_enemy){
-	speed = min(speed, max_velc*0.3)
+// Adicione este bloco para definir a escala da imagem de acordo com a direção
+if (tecla_direita) {
+    image_xscale = 1;  // Defina a escala para a direita
+} else if (tecla_esquerda) {
+    image_xscale = -1;  // Defina a escala para a esquerda
 }
+
+if tecla_cima {
+    vspeed -= acc;
+}
+if tecla_direita {
+    hspeed += acc;
+}
+if tecla_esquerda {
+    hspeed -= acc;
+}
+if tecla_baixo {
+    vspeed += acc;
+}
+if !teclas {
+    speed *= 0.8;
+}
+
+breaking = 20;
+while (place_meeting(x + hspeed, y, obj_parede) && breaking > 0) {
+    breaking--;
+    hspeed *= 0.9;
+    if breaking <= 1 {
+        hspeed = 0;
+    }
+}
+breaking = 20;
+while (place_meeting(x + hspeed, y + vspeed, obj_parede) && breaking > 0) {
+    breaking--;
+    vspeed *= 0.9;
+    if breaking <= 1 {
+        vspeed = 0;
+    }
+}
+
+speed = min(speed, max_velc);
+if place_meeting(x, y, obj_parent_enemy) {
+    speed = min(speed, max_velc * 0.3);
+}
+
 
 /*move_dir = point_direction(0, 0, tecla_direita - tecla_esquerda, tecla_baixo - tecla_cima);
 
@@ -108,5 +118,5 @@ with(my_weapon){
 
 //coisas da vida//
 if vida <=0 {
-	game_end()
+	room_goto_next();
 }
