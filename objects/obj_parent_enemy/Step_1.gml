@@ -88,11 +88,15 @@ switch (estado) {
 				obj_player.vida -= dano
 			}
 		break;
+		
+		
+		
 }
 
 hit_alpha = lerp(hit_alpha, 0, 0.1);
 
 if (life <= 0) {
+	
     instance_destroy();
 }
 exit;
