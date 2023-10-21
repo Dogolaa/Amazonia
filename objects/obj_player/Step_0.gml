@@ -25,11 +25,11 @@ if (teclas != 0) {
     sprite_index = spr_player_idle;
 }
 
-// Adicione este bloco para definir a escala da imagem de acordo com a direção
+
 if (tecla_direita) {
-    image_xscale = 1;  // Defina a escala para a direita
+    image_xscale = 1;  // Define a escala para a direita
 } else if (tecla_esquerda) {
-    image_xscale = -1;  // Defina a escala para a esquerda
+    image_xscale = -1;  // Define a escala para a esquerda
 }
 
 if tecla_cima {
