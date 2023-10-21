@@ -44,6 +44,7 @@
     {"name":"spr_player_walk","order":3,"path":"sprites/spr_player_walk/spr_player_walk.yy",},
     {"name":"obj_parent_enemy","order":6,"path":"objects/obj_parent_enemy/obj_parent_enemy.yy",},
     {"name":"obj_menu","order":5,"path":"objects/obj_menu/obj_menu.yy",},
+    {"name":"obj_esc","order":14,"path":"objects/obj_esc/obj_esc.yy",},
     {"name":"obj_proj_end","order":12,"path":"objects/obj_proj_end/obj_proj_end.yy",},
     {"name":"spr_enemy2_idle","order":14,"path":"sprites/spr_enemy2_idle/spr_enemy2_idle.yy",},
     {"name":"spr_enemy_attack","order":18,"path":"sprites/spr_enemy_attack/spr_enemy_attack.yy",},

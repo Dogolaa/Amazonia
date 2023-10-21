@@ -3,8 +3,14 @@
 var range = 100; // Declare a variável 'range' antes do switch
 
 switch (estado) {
+	
+	case "vazio":
+	sprite_index = spr_enemy_idle;
+	estado = "parado";
+	break;
+	
     case "parado":
-		sprite_index = spr_enemy_idle;
+		sprite_index = meu_spr_idle;
         
         var linha = collision_line(x, y, obj_player.x, obj_player.y, obj_parede, false, false);
 

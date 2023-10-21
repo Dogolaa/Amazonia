@@ -2,7 +2,7 @@
 // Você pode escrever seu código neste editor
 
 
-estado = "parado";
+estado = "vazio";
 caminho = path_add();
 velc = 2.0;
 life = 100;
