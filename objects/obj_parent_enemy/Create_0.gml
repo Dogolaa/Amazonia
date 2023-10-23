@@ -4,8 +4,8 @@
 
 estado = "vazio";
 caminho = path_add();
-velc = 2.0;
-life = 100;
+velc = 1.0;
+life = 40;
 hit_alpha = 0;
 hit_color = c_white;
 

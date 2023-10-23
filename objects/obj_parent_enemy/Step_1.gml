@@ -1,4 +1,4 @@
-if(!global.pause){
+
 
 
 
@@ -71,7 +71,7 @@ switch (estado) {
         break;
 		
 		case "atacando":
-			sprite_index = meu_spr_attack;
+			//sprite_index = meu_spr_attack;
 			if distance_to_object(obj_player) < 5{
 				time_attack += 1/room_speed
 			}
@@ -99,8 +99,7 @@ if (life <= 0) {
 	
     instance_destroy();
 }
-exit;
-}
+
 
 
 	
