@@ -35,17 +35,21 @@ if (tecla_direita) {
 if tecla_cima {
     vspeed -= acc;
 }
+else if tecla_baixo {
+    vspeed += acc;
+}
+else{
+	vspeed *= 0.8
+}
+
 if tecla_direita {
     hspeed += acc;
 }
-if tecla_esquerda {
+else if tecla_esquerda {
     hspeed -= acc;
 }
-if tecla_baixo {
-    vspeed += acc;
-}
-if !teclas {
-    speed *= 0.8;
+else{
+    hspeed *= 0.8;
 }
 
 breaking = 20;
@@ -98,23 +102,6 @@ if (place_meeting(x, y + velv, obj_parede))
 
 y += velv;
 */
-
-with(my_weapon){
-	
-	var mb;
-	
-	
-	if(automatic){
-		mb = mouse_check_button(mb_left);
-	}else{
-		mb = mouse_check_button_pressed(mb_left);
-	}
-	weapon_dir = point_direction(x,y,mouse_x,mouse_y);
-	if(mb){
-		atirar();
-	}
-}
-
 
 //coisas da vida//
 if vida <=0 {

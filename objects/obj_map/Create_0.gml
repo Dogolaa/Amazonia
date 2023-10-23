@@ -2,10 +2,11 @@ global.srf_weapons = surface_create(room_width, room_height)
 
 
 cell_t = 32;
-room_width = cell_t * 40;
-room_height = room_width div 2;
+//room_width = cell_t * 40;
+//room_height = room_width div 2;
 cell_h = room_width div cell_t;
 cell_v = room_height div cell_t;
+map_edge_size = 7
 
 grid = ds_grid_create(cell_h, cell_v);
 ds_grid_clear(grid, 0);
@@ -39,12 +40,11 @@ for (var i = 0; i < passos; i += 1) {
     xx += lengthdir_x(1, dir * 90);
     yy += lengthdir_y(1, dir * 90);
 
-    xx = clamp(xx, 2, cell_h - 2);
-    yy = clamp(yy, 2, cell_v - 2);
+    xx = clamp(xx, map_edge_size, cell_h - map_edge_size);
+    yy = clamp(yy, map_edge_size, cell_v - map_edge_size);
 
     grid[# xx, yy] = 1;
 }
-
 for (var xx = 0; xx < cell_h; xx++) {
     for (var yy = 0; yy < cell_v; yy++) {
       if(grid[# xx,yy] == 0){

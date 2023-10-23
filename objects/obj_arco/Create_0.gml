@@ -6,7 +6,7 @@ ds_map_add(armas[1],"proj_damage",10);
 ds_map_add(armas[1],"proj_delay",12);
 ds_map_add(armas[1],"automatic",false);
 
-
+image_speed = 0
 
 weapon = 1;
 
