@@ -1,5 +1,9 @@
-if(index == 0){
-	room_goto_next();
-}else if(index == 3){
-	game_end();
+
+if obj_controller.modo == 1{
+	if(index == 0){
+		obj_controller.modo = 2
+	}
+	else if(index == 3){
+		game_end();
+	}
 }

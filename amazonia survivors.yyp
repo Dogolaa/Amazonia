@@ -75,6 +75,7 @@
     {"id":{"name":"obj_proj_end","path":"objects/obj_proj_end/obj_proj_end.yy",},},
     {"id":{"name":"spr_enemy2_idle","path":"sprites/spr_enemy2_idle/spr_enemy2_idle.yy",},},
     {"id":{"name":"spr_enemy_attack","path":"sprites/spr_enemy_attack/spr_enemy_attack.yy",},},
+    {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"spr_game_over","path":"sprites/spr_game_over/spr_game_over.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
