@@ -71,7 +71,7 @@ switch (estado) {
         break;
 		
 		case "atacando":
-			//sprite_index = meu_spr_attack;
+			sprite_index = meu_spr_attack;
 			if distance_to_object(obj_player) < 5{
 				time_attack += 1/room_speed
 			}
