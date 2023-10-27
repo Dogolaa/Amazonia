@@ -33,6 +33,7 @@
     {"name":"obj_inimigo","order":10,"path":"objects/obj_inimigo/obj_inimigo.yy",},
     {"name":"obj_arco","order":13,"path":"objects/obj_arco/obj_arco.yy",},
     {"name":"spr_tocha","order":22,"path":"sprites/spr_tocha/spr_tocha.yy",},
+    {"name":"Sprite21","order":23,"path":"sprites/Sprite21/Sprite21.yy",},
     {"name":"obj_parede","order":7,"path":"objects/obj_parede/obj_parede.yy",},
     {"name":"spr_chao","order":21,"path":"sprites/spr_chao/spr_chao.yy",},
     {"name":"obj_cam_follower","order":4,"path":"objects/obj_cam_follower/obj_cam_follower.yy",},
