@@ -52,7 +52,6 @@
     {"id":{"name":"obj_inimigo","path":"objects/obj_inimigo/obj_inimigo.yy",},},
     {"id":{"name":"obj_arco","path":"objects/obj_arco/obj_arco.yy",},},
     {"id":{"name":"spr_tocha","path":"sprites/spr_tocha/spr_tocha.yy",},},
-    {"id":{"name":"Sprite21","path":"sprites/Sprite21/Sprite21.yy",},},
     {"id":{"name":"obj_parede","path":"objects/obj_parede/obj_parede.yy",},},
     {"id":{"name":"spr_chao","path":"sprites/spr_chao/spr_chao.yy",},},
     {"id":{"name":"obj_cam_follower","path":"objects/obj_cam_follower/obj_cam_follower.yy",},},
