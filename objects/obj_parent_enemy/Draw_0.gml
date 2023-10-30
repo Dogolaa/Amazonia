@@ -12,4 +12,4 @@ if(hit_alpha > 0){
 	gpu_set_fog(false,hit_color,0,0);
 }
 
-ilumina(x, y, 50, 20)
+ilumina(x, y, 40, 10)

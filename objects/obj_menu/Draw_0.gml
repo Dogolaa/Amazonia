@@ -1,6 +1,7 @@
 draw_set_font(ft_menu);
 
-
+my_alpha += (obj_controller.modo - my_alpha)/10
+draw_set_alpha(my_alpha)
 
 var dist = 55;
 var dists = 58;
