@@ -3,7 +3,8 @@
 
 
 
-draw_self();
+//draw_self();
+draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, dcos(cos_animation) * 10, image_blend, image_alpha)
 
 
 if(hit_alpha > 0){

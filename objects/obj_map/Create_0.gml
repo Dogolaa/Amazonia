@@ -92,7 +92,7 @@ for (var xx = 0; xx < cell_h; xx++) {
                 var chances = 10;
                 var dist = 130;
                 if (irandom(chances) == chances && point_distance(x1, y1, obj_player.x, obj_player.y) > dist) {
-                    instance_create_layer(x1, y1, "Instances", choose(obj_inimigo, obj_inimigo_2));
+                    instance_create_layer(x1, y1, "Instances", choose(obj_inimigo))//, obj_inimigo_2));
                     inimigo_max -= 1;
 					inimigo_cont += 1;
                 }
