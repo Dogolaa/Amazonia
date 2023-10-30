@@ -57,6 +57,7 @@
     {"id":{"name":"obj_cam_follower","path":"objects/obj_cam_follower/obj_cam_follower.yy",},},
     {"id":{"name":"spr_enemy_idle","path":"sprites/spr_enemy_idle/spr_enemy_idle.yy",},},
     {"id":{"name":"obj_effects_hub","path":"objects/obj_effects_hub/obj_effects_hub.yy",},},
+    {"id":{"name":"obj_mandioca","path":"objects/obj_mandioca/obj_mandioca.yy",},},
     {"id":{"name":"ft_menu","path":"fonts/ft_menu/ft_menu.yy",},},
     {"id":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"id":{"name":"Object19","path":"objects/Object19/Object19.yy",},},

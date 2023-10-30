@@ -38,6 +38,7 @@
     {"name":"obj_cam_follower","order":4,"path":"objects/obj_cam_follower/obj_cam_follower.yy",},
     {"name":"spr_enemy_idle","order":12,"path":"sprites/spr_enemy_idle/spr_enemy_idle.yy",},
     {"name":"obj_effects_hub","order":1,"path":"objects/obj_effects_hub/obj_effects_hub.yy",},
+    {"name":"obj_mandioca","order":19,"path":"objects/obj_mandioca/obj_mandioca.yy",},
     {"name":"Room3","order":2,"path":"rooms/Room3/Room3.yy",},
     {"name":"Object19","order":18,"path":"objects/Object19/Object19.yy",},
     {"name":"obj_saida","order":12,"path":"objects/obj_saida/obj_saida.yy",},
