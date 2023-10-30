@@ -27,7 +27,7 @@ switch (estado) {
     case "seguindo_jogador":
 	
         sprite_index = meu_spr_walk;
-		cos_animation += path_speed * 10
+		cos_animation += path_speed * 15
 		
         var x1 = x;
         var y1 = y;
@@ -91,7 +91,7 @@ switch (estado) {
 				time_attack = 0
 				estado = "seguindo_jogador"
 				image_blend = c_white
-				obj_player.vida -= dano
+				global.vida -= dano
 			}
 		break;
 		

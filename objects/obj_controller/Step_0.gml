@@ -37,5 +37,9 @@ else if room == Room2{
 		cos_index += 1
 		fx_vig_strength[1] = 1.2 + dcos(cos_index)/5
 	}
+	
+	if global.dead{
+		room_goto(Room3)
+	}
 }
 

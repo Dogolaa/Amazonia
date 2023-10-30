@@ -4,9 +4,6 @@ velc = 0;
 acc = 0.2
 max_velc = 2
 
-vida = 100
-max_vida = 100
-
 my_weapon = instance_create_depth(x , y , depth, obj_arco);
 my_weapon.weapon_id = self;
 

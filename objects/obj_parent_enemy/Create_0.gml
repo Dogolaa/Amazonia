@@ -4,8 +4,8 @@
 image_speed = 0
 sprite_index = choose(spr_corpo_seco, spr_cuca, spr_lobisomem)
 
-image_xscale = 0.5
-image_yscale = image_xscale
+ix = 0.8
+iy = ix
 
 meu_spr_idle = sprite_index
 meu_spr_walk = sprite_index

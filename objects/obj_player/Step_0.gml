@@ -19,8 +19,12 @@ var dist_saida = 5;
 var tecla_sair = keyboard_check(ord("E"));
 var teclas_sair = (tecla_sair != 0);
 
-if (distance_to_object(obj_saida) <= dist_saida && tecla_sair != 0){// && instance_number(obj_parent_enemy) == 0) {
+if (distance_to_object(obj_saida) <= dist_saida && tecla_sair != 0) or keyboard_check_pressed(ord("P")){// && instance_number(obj_parent_enemy) == 0) {
 	global.nivel++
+	ini_open("save_do_game")
+	ini_write_real("vida", "0", global.vida)
+	ini_write_real("nivel", "0", global.nivel)
+	ini_close()
     room_restart();
 }
 
@@ -115,6 +119,11 @@ y += velv;
 */
 
 //coisas da vida//
-if vida <=0 {
-	room_goto_next();
+if global.vida <=0 {
+	instance_destroy(my_weapon)
+	instance_destroy(camera_follower)
+	instance_destroy(obj_effects_hub)
+	speed = 0
+	global.dead = true
+	//room_goto(Room3);
 }
