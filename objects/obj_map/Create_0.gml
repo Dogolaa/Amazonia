@@ -17,7 +17,7 @@ var dir = irandom(3);
 var xx = cell_h div 2;
 var yy = cell_v div 2;
 var chances = 3;
-var passos = 1000;
+var passos = 2000;
 var inimigo_max = 8;
 var inimigo_cont = 0;
 var saida = 1;
@@ -89,7 +89,7 @@ for (var xx = 0; xx < cell_h; xx++) {
             }
 
             if (inimigo_max > 0) {
-                var chances = 20;
+                var chances = 10;
                 var dist = 130;
                 if (irandom(chances) == chances && point_distance(x1, y1, obj_player.x, obj_player.y) > dist) {
                     instance_create_layer(x1, y1, "Instances", choose(obj_inimigo, obj_inimigo_2));

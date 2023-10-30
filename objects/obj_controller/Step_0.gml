@@ -35,7 +35,7 @@ else if room == Room2{
 	}
 	else{
 		cos_index += 1
-		fx_vig_strength[1] = 1 + dcos(cos_index)/10
+		fx_vig_strength[1] = 1.2 + dcos(cos_index)/5
 	}
 }
 
