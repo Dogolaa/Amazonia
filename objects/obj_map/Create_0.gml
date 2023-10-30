@@ -2,10 +2,11 @@ global.srf_weapons = surface_create(room_width, room_height)
 
 
 cell_t = 32;
-room_width = cell_t * 40;
-room_height = room_width div 2;
+//room_width = cell_t * 40;
+//room_height = room_width div 2;
 cell_h = room_width div cell_t;
 cell_v = room_height div cell_t;
+map_edge_size = 7
 
 grid = ds_grid_create(cell_h, cell_v);
 ds_grid_clear(grid, 0);
@@ -16,10 +17,11 @@ var dir = irandom(3);
 var xx = cell_h div 2;
 var yy = cell_v div 2;
 var chances = 3;
-var passos = 1000;
+var passos = 2000;
 var inimigo_max = 8;
 var inimigo_cont = 0;
 var saida = 1;
+var mandioca = 2;
 
 var chao_index = 17;
 norte = 1;
@@ -39,12 +41,11 @@ for (var i = 0; i < passos; i += 1) {
     xx += lengthdir_x(1, dir * 90);
     yy += lengthdir_y(1, dir * 90);
 
-    xx = clamp(xx, 2, cell_h - 2);
-    yy = clamp(yy, 2, cell_v - 2);
+    xx = clamp(xx, map_edge_size, cell_h - map_edge_size);
+    yy = clamp(yy, map_edge_size, cell_v - map_edge_size);
 
     grid[# xx, yy] = 1;
 }
-
 for (var xx = 0; xx < cell_h; xx++) {
     for (var yy = 0; yy < cell_v; yy++) {
       if(grid[# xx,yy] == 0){
@@ -88,7 +89,7 @@ for (var xx = 0; xx < cell_h; xx++) {
             }
 
             if (inimigo_max > 0) {
-                var chances = 20;
+                var chances = 10;
                 var dist = 130;
                 if (irandom(chances) == chances && point_distance(x1, y1, obj_player.x, obj_player.y) > dist) {
                     instance_create_layer(x1, y1, "Instances", choose(obj_inimigo, obj_inimigo_2));
@@ -104,6 +105,14 @@ for (var xx = 0; xx < cell_h; xx++) {
                     instance_create_layer(x1, y1, "Instances", obj_saida);
                     saida -= 1;
                 }
+			if (mandioca > 0) {
+                var chances = 20;
+                var dist = 200;
+					if (irandom(chances) == chances && point_distance(x1, y1, obj_player.x, obj_player.y) > dist) {
+						instance_create_layer(x1, y1, "Instances", obj_mandioca);
+						mandioca -= 1;
+				  }
+				}
             }
         }
     }

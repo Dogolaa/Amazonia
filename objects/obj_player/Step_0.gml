@@ -1,3 +1,13 @@
+/*if(global.pause){
+	
+	hspeed = 0;
+    vspeed = 0;
+	exit;
+
+}
+*/
+
+
 var tecla_direita = keyboard_check(ord("D"));
 var tecla_esquerda = keyboard_check(ord("A"));
 var tecla_cima = keyboard_check(ord("W"));
@@ -9,7 +19,8 @@ var dist_saida = 5;
 var tecla_sair = keyboard_check(ord("E"));
 var teclas_sair = (tecla_sair != 0);
 
-if (distance_to_object(obj_saida) <= dist_saida && tecla_sair != 0 && instance_number(obj_parent_enemy) == 0) {
+if (distance_to_object(obj_saida) <= dist_saida && tecla_sair != 0){// && instance_number(obj_parent_enemy) == 0) {
+	global.nivel++
     room_restart();
 }
 
@@ -35,17 +46,21 @@ if (tecla_direita) {
 if tecla_cima {
     vspeed -= acc;
 }
+else if tecla_baixo {
+    vspeed += acc;
+}
+else{
+	vspeed *= 0.8
+}
+
 if tecla_direita {
     hspeed += acc;
 }
-if tecla_esquerda {
+else if tecla_esquerda {
     hspeed -= acc;
 }
-if tecla_baixo {
-    vspeed += acc;
-}
-if !teclas {
-    speed *= 0.8;
+else{
+    hspeed *= 0.8;
 }
 
 breaking = 20;
@@ -98,23 +113,6 @@ if (place_meeting(x, y + velv, obj_parede))
 
 y += velv;
 */
-
-with(my_weapon){
-	
-	var mb;
-	
-	
-	if(automatic){
-		mb = mouse_check_button(mb_left);
-	}else{
-		mb = mouse_check_button_pressed(mb_left);
-	}
-	weapon_dir = point_direction(x,y,mouse_x,mouse_y);
-	if(mb){
-		atirar();
-	}
-}
-
 
 //coisas da vida//
 if vida <=0 {
