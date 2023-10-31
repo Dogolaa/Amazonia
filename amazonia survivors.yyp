@@ -69,6 +69,7 @@
     {"id":{"name":"spr_lobisomem","path":"sprites/spr_lobisomem/spr_lobisomem.yy",},},
     {"id":{"name":"spr_enemy_walk","path":"sprites/spr_enemy_walk/spr_enemy_walk.yy",},},
     {"id":{"name":"spr_player_walk","path":"sprites/spr_player_walk/spr_player_walk.yy",},},
+    {"id":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
     {"id":{"name":"shader_subtract","path":"shaders/shader_subtract/shader_subtract.yy",},},
     {"id":{"name":"spr_enemy2_attack","path":"sprites/spr_enemy2_attack/spr_enemy2_attack.yy",},},
     {"id":{"name":"obj_parent_enemy","path":"objects/obj_parent_enemy/obj_parent_enemy.yy",},},
@@ -88,6 +89,7 @@
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
+    {"roomId":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [
