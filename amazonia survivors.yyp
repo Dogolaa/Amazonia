@@ -55,6 +55,7 @@
     {"id":{"name":"spr_cuca","path":"sprites/spr_cuca/spr_cuca.yy",},},
     {"id":{"name":"spr_chao","path":"sprites/spr_chao/spr_chao.yy",},},
     {"id":{"name":"obj_cam_follower","path":"objects/obj_cam_follower/obj_cam_follower.yy",},},
+    {"id":{"name":"obj_shop","path":"objects/obj_shop/obj_shop.yy",},},
     {"id":{"name":"spr_enemy_idle","path":"sprites/spr_enemy_idle/spr_enemy_idle.yy",},},
     {"id":{"name":"obj_effects_hub","path":"objects/obj_effects_hub/obj_effects_hub.yy",},},
     {"id":{"name":"obj_mandioca","path":"objects/obj_mandioca/obj_mandioca.yy",},},
@@ -70,6 +71,7 @@
     {"id":{"name":"spr_enemy_walk","path":"sprites/spr_enemy_walk/spr_enemy_walk.yy",},},
     {"id":{"name":"spr_player_walk","path":"sprites/spr_player_walk/spr_player_walk.yy",},},
     {"id":{"name":"shader_subtract","path":"shaders/shader_subtract/shader_subtract.yy",},},
+    {"id":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
     {"id":{"name":"spr_enemy2_attack","path":"sprites/spr_enemy2_attack/spr_enemy2_attack.yy",},},
     {"id":{"name":"obj_parent_enemy","path":"objects/obj_parent_enemy/obj_parent_enemy.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
@@ -88,6 +90,7 @@
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
+    {"roomId":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [
