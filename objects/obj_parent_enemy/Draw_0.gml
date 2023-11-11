@@ -20,4 +20,4 @@ depth = -y
 draw_set_color(c_white)
 draw_set_font(ft_menu)
 draw_set_halign(fa_center)
-draw_text_ext_transformed(x, y-24, "bixo", 0, 64, 0.3, 0.3, 0)
+draw_text_ext_transformed(x, y-24, nome, 20, 64, 0.2, 0.2, 0)

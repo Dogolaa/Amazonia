@@ -122,8 +122,8 @@ y += velv;
 if global.vida <=0 {
 	instance_destroy(my_weapon)
 	instance_destroy(camera_follower)
+	instance_destroy(obj_controller)
 	instance_destroy(obj_effects_hub)
 	speed = 0
-	global.dead = true
-	//room_goto(Room3);
+	room_goto(Room4);
 }
