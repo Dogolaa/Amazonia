@@ -33,6 +33,10 @@
   ],
   "nineSlice": null,
   "origin": 9,
+  "parent": {
+    "name": "amazonia survivors",
+    "path": "amazonia survivors.yyp",
+  },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
