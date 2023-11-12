@@ -12,6 +12,8 @@ grid = ds_grid_create(cell_h, cell_v);
 ds_grid_clear(grid, 0);
 mp_grid = mp_grid_create(0,0,cell_h,cell_v,cell_t,cell_t);
 
+audio_play_sound(snd_trilha,3,true);
+
 randomize();
 var dir = irandom(3);
 var xx = cell_h div 2;

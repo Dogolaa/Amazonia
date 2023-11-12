@@ -78,6 +78,7 @@ switch (estado) {
 			sprite_index = meu_spr_attack;
 			cos_animation += cos_animation/20
 			
+			
 			if distance_to_object(obj_player) < 5{
 				time_attack += 1/room_speed
 			}
@@ -88,6 +89,7 @@ switch (estado) {
 			}
 
 			if time_attack >= 0.5{
+				audio_play_sound(snd_enemy_attack,2,false);
 				time_attack = 0
 				estado = "seguindo_jogador"
 				image_blend = c_white

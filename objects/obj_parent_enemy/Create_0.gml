@@ -4,9 +4,9 @@
 image_speed = 0
 sprite_index = choose(spr_corpo_seco, spr_cuca, spr_lobisomem)
 
-if sprite_index == spr_corpo_seco { nome = "corpo seco" }
-if sprite_index == spr_cuca { nome = "cu-k" }
-if sprite_index == spr_lobisomem { nome = "pidão" }
+if sprite_index == spr_corpo_seco { nome = "Corpo Seco" }
+if sprite_index == spr_cuca { nome = "Cuca" }
+if sprite_index == spr_lobisomem { nome = "Lobisomem" }
 
 ix = 0.8
 iy = ix

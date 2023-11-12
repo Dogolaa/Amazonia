@@ -125,5 +125,5 @@ if global.vida <=0 {
 	instance_destroy(obj_controller)
 	instance_destroy(obj_effects_hub)
 	speed = 0
-	room_goto(Room4);
+	room_goto(Room3);
 }
