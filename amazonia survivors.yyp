@@ -53,6 +53,7 @@
     {"id":{"name":"Room0","path":"rooms/Room0/Room0.yy",},},
     {"id":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
     {"id":{"name":"spr_arrow","path":"sprites/spr_arrow/spr_arrow.yy",},},
+    {"id":{"name":"ft_skip","path":"fonts/ft_skip/ft_skip.yy",},},
     {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},},
     {"id":{"name":"obj_inimigo","path":"objects/obj_inimigo/obj_inimigo.yy",},},
     {"id":{"name":"obj_arco","path":"objects/obj_arco/obj_arco.yy",},},
