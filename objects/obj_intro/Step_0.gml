@@ -56,7 +56,7 @@ switch (estado) {
         break;
 
     case "imagem4":
-        sprite_index = spr_kapo_seco;
+        sprite_index = spr_kapo_seco2;
         if (!audio_is_playing(snd_corpo_seco_1)) {
             audio_play_sound(snd_corpo_seco_1, 1, false);
         }
@@ -68,7 +68,7 @@ switch (estado) {
         break;
 
     case "imagem5":
-        sprite_index = spr_kapo_seco2;
+        sprite_index = spr_kapo_seco;
         if (!audio_is_playing(snd_corpo_seco_2)) {
             audio_play_sound(snd_corpo_seco_2, 1, false);
         }
