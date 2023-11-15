@@ -79,13 +79,13 @@ switch (estado) {
         }
         break;
 
-    case "imagem6":
+     case "imagem6":
         sprite_index = spr_ku_k;
         if (!audio_is_playing(snd_cuca)) {
             audio_play_sound(snd_cuca, 1, false);
         }
 
-        if (_tecla_sair || (!_tecla_sair && !audio_is_playing(snd_corpo_seco_2))) {
+        if (_tecla_sair || (!_tecla_sair && !audio_is_playing(snd_cuca))) {
             estado = "imagem8";
             audio_stop_sound(snd_cuca);
         }
