@@ -1,5 +1,6 @@
+
 draw_set_font(ft_menu);
-var dist_mandioca = 5;
+var dist_saida = 10;
 	draw_set_font(ft_menu);
 	var dist = 55;
 	var dists = 58;
@@ -8,7 +9,7 @@ var dist_mandioca = 5;
 	var x1 = gui_largura / 1.2 ;
 	var y1 = gui_altura ;
 
-if (distance_to_object(obj_player) <= dist_mandioca){
+if (distance_to_object(obj_player) <= dist_saida){
 
 
 
@@ -16,11 +17,8 @@ if (distance_to_object(obj_player) <= dist_mandioca){
 		draw_set_halign(fa_bottom);
 		draw_set_valign(fa_bottom);
 		draw_set_color(c_yellow);
-		draw_text(x1,y1,"Voce encontrou uma Mandioca +10 hp");
+		draw_text(x1,y1,"Voce encontrou uma MANDIOCA +10 HP");
 
 }
-
 draw_set_font(-1);
-
-
-
+	

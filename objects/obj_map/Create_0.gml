@@ -23,7 +23,7 @@ var passos = 2000;
 var inimigo_max = 40;
 var inimigo_cont = 0;
 var saida = 1;
-var mandioca = 2;
+var mandioca = 10;
 
 var chao_index = 17;
 norte = 1;
@@ -110,10 +110,10 @@ for (var xx = 0; xx < cell_h; xx++) {
             }
 			
 			if (mandioca > 0) {
-                var chances = 1;
-                var dist = 700;
+                var chances = 10;
+                var dist = 130;
                 if (irandom(chances) == chances && point_distance(x1, y1, obj_player.x, obj_player.y) > dist) {
-                    instance_create_layer(x1, y1, "Instances", obj_mandioca);
+                    instance_create_layer(x1, y1, "Instances", obj_mandioca	);
                     mandioca -= 1;
                 }
             }
