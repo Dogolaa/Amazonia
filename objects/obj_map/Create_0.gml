@@ -108,6 +108,15 @@ for (var xx = 0; xx < cell_h; xx++) {
                     saida -= 1;
                 }
             }
+			
+			if (mandioca > 0) {
+                var chances = 1;
+                var dist = 700;
+                if (irandom(chances) == chances && point_distance(x1, y1, obj_player.x, obj_player.y) > dist) {
+                    instance_create_layer(x1, y1, "Instances", obj_mandioca);
+                    mandioca -= 1;
+                }
+            }
         }
     }
 }

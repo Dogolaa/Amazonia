@@ -1,0 +1,6 @@
+estado = "vazio";
+
+
+
+
+
