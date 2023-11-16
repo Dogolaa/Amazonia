@@ -37,7 +37,6 @@
     {"name":"spr_fogueira1","order":24,"path":"sprites/spr_fogueira1/spr_fogueira1.yy",},
     {"name":"spr_sombra","order":9,"path":"sprites/spr_sombra/spr_sombra.yy",},
     {"name":"spr_VOCE_MORREU","order":33,"path":"sprites/spr_VOCE_MORREU/spr_VOCE_MORREU.yy",},
-    {"name":"obj_play_video","order":1,"path":"objects/obj_play_video/obj_play_video.yy",},
     {"name":"snd_imagem2","order":12,"path":"sounds/snd_imagem2/snd_imagem2.yy",},
     {"name":"spr_corpo_seco","order":7,"path":"sprites/spr_corpo_seco/spr_corpo_seco.yy",},
     {"name":"spr_cursor","order":8,"path":"sprites/spr_cursor/spr_cursor.yy",},

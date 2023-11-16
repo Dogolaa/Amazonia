@@ -1,6 +1,6 @@
 
 draw_set_font(ft_menu);
-var dist_saida = 10;
+var dist_saida = 35;
 	draw_set_font(ft_menu);
 	var dist = 55;
 	var dists = 58;

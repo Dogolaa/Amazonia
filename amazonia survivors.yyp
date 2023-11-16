@@ -27,11 +27,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sons","folderPath":"folders/Sons.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
   ],
-  "IncludedFiles": [
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"intro_jogo.wmv","CopyToMask":-1,"filePath":"datafiles",},
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"intro_jogo.wmv.sfap0","CopyToMask":-1,"filePath":"datafiles",},
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"intro_jogo.wmv.sfk","CopyToMask":-1,"filePath":"datafiles",},
-  ],
+  "IncludedFiles": [],
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
@@ -91,7 +87,6 @@
     {"id":{"name":"spr_sombra","path":"sprites/spr_sombra/spr_sombra.yy",},},
     {"id":{"name":"obj_tocha","path":"objects/obj_tocha/obj_tocha.yy",},},
     {"id":{"name":"spr_VOCE_MORREU","path":"sprites/spr_VOCE_MORREU/spr_VOCE_MORREU.yy",},},
-    {"id":{"name":"obj_play_video","path":"objects/obj_play_video/obj_play_video.yy",},},
     {"id":{"name":"snd_imagem2","path":"sounds/snd_imagem2/snd_imagem2.yy",},},
     {"id":{"name":"spr_corpo_seco","path":"sprites/spr_corpo_seco/spr_corpo_seco.yy",},},
     {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},},
