@@ -78,6 +78,7 @@
     {"id":{"name":"spr_enemy_idle","path":"sprites/spr_enemy_idle/spr_enemy_idle.yy",},},
     {"id":{"name":"obj_effects_hub","path":"objects/obj_effects_hub/obj_effects_hub.yy",},},
     {"id":{"name":"obj_mandioca","path":"objects/obj_mandioca/obj_mandioca.yy",},},
+    {"id":{"name":"obj_menu_pause","path":"objects/obj_menu_pause/obj_menu_pause.yy",},},
     {"id":{"name":"snd_teste","path":"sounds/snd_teste/snd_teste.yy",},},
     {"id":{"name":"ft_menu","path":"fonts/ft_menu/ft_menu.yy",},},
     {"id":{"name":"spr_PRESSIONE_E","path":"sprites/spr_PRESSIONE_E/spr_PRESSIONE_E.yy",},},
@@ -102,6 +103,7 @@
     {"id":{"name":"spr_enemy2_attack","path":"sprites/spr_enemy2_attack/spr_enemy2_attack.yy",},},
     {"id":{"name":"obj_parent_enemy","path":"objects/obj_parent_enemy/obj_parent_enemy.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
+    {"id":{"name":"Room6","path":"rooms/Room6/Room6.yy",},},
     {"id":{"name":"snd_bizarro","path":"sounds/snd_bizarro/snd_bizarro.yy",},},
     {"id":{"name":"obj_boitatao","path":"objects/obj_boitatao/obj_boitatao.yy",},},
     {"id":{"name":"obj_esc","path":"objects/obj_esc/obj_esc.yy",},},
@@ -123,6 +125,7 @@
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"roomId":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
+    {"roomId":{"name":"Room6","path":"rooms/Room6/Room6.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [
