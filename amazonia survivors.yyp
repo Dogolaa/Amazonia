@@ -114,6 +114,7 @@
     {"id":{"name":"spr_epic","path":"sprites/spr_epic/spr_epic.yy",},},
     {"id":{"name":"snd_arco","path":"sounds/snd_arco/snd_arco.yy",},},
     {"id":{"name":"spr_enemy_ataque","path":"sprites/spr_enemy_ataque/spr_enemy_ataque.yy",},},
+    {"id":{"name":"Enemy","path":"sprites/Enemy/Enemy.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"snd_cuca","path":"sounds/snd_cuca/snd_cuca.yy",},},
