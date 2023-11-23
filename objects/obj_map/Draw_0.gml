@@ -8,3 +8,5 @@ if !surface_exists(global.srf_weapons){
 else{
 	draw_surface(global.srf_weapons, 0, 0)
 }
+
+

@@ -1,5 +1,8 @@
 
+global.max_vida = 100
+global.vida = global.max_vida
 
+global.pontos = 0
 global.nivel = 0
 
 modo = 0

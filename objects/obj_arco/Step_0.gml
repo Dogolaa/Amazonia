@@ -1,5 +1,6 @@
 
 if(instance_exists(weapon_id)){
+	
 	x = obj_player.x;
 	y = obj_player.y + 7;
 	weapon_dir = point_direction(x,y,mouse_x,mouse_y);

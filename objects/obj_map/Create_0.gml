@@ -12,16 +12,18 @@ grid = ds_grid_create(cell_h, cell_v);
 ds_grid_clear(grid, 0);
 mp_grid = mp_grid_create(0,0,cell_h,cell_v,cell_t,cell_t);
 
+audio_play_sound(snd_trilha,3,true);
+
 randomize();
 var dir = irandom(3);
 var xx = cell_h div 2;
 var yy = cell_v div 2;
 var chances = 3;
 var passos = 2000;
-var inimigo_max = 8;
+var inimigo_max = 40;
 var inimigo_cont = 0;
 var saida = 1;
-var mandioca = 2;
+var mandioca = 5;
 
 var chao_index = 17;
 norte = 1;
@@ -92,7 +94,7 @@ for (var xx = 0; xx < cell_h; xx++) {
                 var chances = 10;
                 var dist = 130;
                 if (irandom(chances) == chances && point_distance(x1, y1, obj_player.x, obj_player.y) > dist) {
-                    instance_create_layer(x1, y1, "Instances", choose(obj_inimigo, obj_inimigo_2));
+                    instance_create_layer(x1, y1, "Instances", choose(obj_inimigo))//, obj_inimigo_2));
                     inimigo_max -= 1;
 					inimigo_cont += 1;
                 }
@@ -105,14 +107,15 @@ for (var xx = 0; xx < cell_h; xx++) {
                     instance_create_layer(x1, y1, "Instances", obj_saida);
                     saida -= 1;
                 }
+            }
+			
 			if (mandioca > 0) {
-                var chances = 20;
-                var dist = 200;
-					if (irandom(chances) == chances && point_distance(x1, y1, obj_player.x, obj_player.y) > dist) {
-						instance_create_layer(x1, y1, "Instances", obj_mandioca);
-						mandioca -= 1;
-				  }
-				}
+                var chances = 2;
+                var dist = 130;
+                if (irandom(chances) == chances && point_distance(x1, y1, obj_player.x, obj_player.y) > dist) {
+                    instance_create_layer(x1, y1, "Instances", obj_mandioca	);
+                    mandioca -= 1;
+                }
             }
         }
     }

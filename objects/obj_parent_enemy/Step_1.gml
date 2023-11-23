@@ -7,12 +7,13 @@ var range = 100; // Declare a variável 'range' antes do switch
 switch (estado) {
 	
 	case "vazio":
-	sprite_index = spr_enemy_idle;
+	//sprite_index = spr_enemy_idle;
 	estado = "parado";
 	break;
 	
     case "parado":
 		sprite_index = meu_spr_idle;
+		cos_animation += angle_difference(0, cos_animation)/10
         
         var linha = collision_line(x, y, obj_player.x, obj_player.y, obj_parede, false, false);
 
@@ -26,6 +27,8 @@ switch (estado) {
     case "seguindo_jogador":
 	
         sprite_index = meu_spr_walk;
+		cos_animation += path_speed * 15
+		
         var x1 = x;
         var y1 = y;
         var x2 = (obj_player.x div 32) * 32 + 16;
@@ -67,11 +70,15 @@ switch (estado) {
 		
 		if distance_to_object(obj_player) < 5{
 			estado = "atacando"
+			cos_animation = 1
 		}
         break;
 		
 		case "atacando":
 			sprite_index = meu_spr_attack;
+			cos_animation += cos_animation/20
+			
+			
 			if distance_to_object(obj_player) < 5{
 				time_attack += 1/room_speed
 			}
@@ -82,15 +89,20 @@ switch (estado) {
 			}
 
 			if time_attack >= 0.5{
+				audio_play_sound(snd_enemy_attack,2,false);
 				time_attack = 0
 				estado = "seguindo_jogador"
 				image_blend = c_white
-				obj_player.vida -= dano
+				global.vida -= dano
 			}
 		break;
 		
 		
 		
+}
+
+if cos_animation > 360{
+	cos_animation -= 360
 }
 
 hit_alpha = lerp(hit_alpha, 0, 0.1);
