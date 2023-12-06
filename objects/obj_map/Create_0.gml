@@ -23,7 +23,7 @@ var passos = 2000;
 var inimigo_max = 40;
 var inimigo_cont = 0;
 var saida = 1;
-var mandioca = 5;
+var mandioca = 2;
 
 var chao_index = 17;
 norte = 1;
