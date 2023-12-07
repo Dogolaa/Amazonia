@@ -53,8 +53,8 @@
     "path": "folders/Conjuntos de tiles.yy",
   },
   "spriteId": {
-    "name": "Tileset",
-    "path": "sprites/Tileset/Tileset.yy",
+    "name": "spr_ground_vila",
+    "path": "sprites/spr_ground_vila/spr_ground_vila.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {

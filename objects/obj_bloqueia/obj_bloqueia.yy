@@ -28,9 +28,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite43",
-    "path": "sprites/Sprite43/Sprite43.yy",
+    "name": "spt_bloqueia",
+    "path": "sprites/spt_bloqueia/spt_bloqueia.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
