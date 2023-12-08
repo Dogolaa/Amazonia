@@ -31,7 +31,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.0.121",
   },
   "resources": [
     {"id":{"name":"spr_solo","path":"sprites/spr_solo/spr_solo.yy",},},
@@ -51,6 +51,7 @@
     {"id":{"name":"aldeia_tiles","path":"tilesets/aldeia_tiles/aldeia_tiles.yy",},},
     {"id":{"name":"obj_map_vila","path":"objects/obj_map_vila/obj_map_vila.yy",},},
     {"id":{"name":"global","path":"sprites/global/global.yy",},},
+    {"id":{"name":"spr_mae","path":"sprites/spr_mae/spr_mae.yy",},},
     {"id":{"name":"snd_trilha_vila","path":"sounds/snd_trilha_vila/snd_trilha_vila.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"snd_tio_voice","path":"sounds/snd_tio_voice/snd_tio_voice.yy",},},
@@ -125,6 +126,7 @@
     {"id":{"name":"spr_arvores_sozinhas","path":"sprites/spr_arvores_sozinhas/spr_arvores_sozinhas.yy",},},
     {"id":{"name":"snd_enemy_attack","path":"sounds/snd_enemy_attack/snd_enemy_attack.yy",},},
     {"id":{"name":"spr_logo","path":"sprites/spr_logo/spr_logo.yy",},},
+    {"id":{"name":"obj_mae","path":"objects/obj_mae/obj_mae.yy",},},
     {"id":{"name":"shader_subtract","path":"shaders/shader_subtract/shader_subtract.yy",},},
     {"id":{"name":"spr_enemy2_attack","path":"sprites/spr_enemy2_attack/spr_enemy2_attack.yy",},},
     {"id":{"name":"TileSet4","path":"tilesets/TileSet4/TileSet4.yy",},},
