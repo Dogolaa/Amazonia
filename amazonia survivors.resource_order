@@ -37,6 +37,7 @@
     {"name":"snd_player_voice","order":2,"path":"sounds/snd_player_voice/snd_player_voice.yy",},
     {"name":"ScriptsTextos","order":1,"path":"scripts/ScriptsTextos/ScriptsTextos.yy",},
     {"name":"spr_enemy_idle","order":17,"path":"sprites/spr_enemy_idle/spr_enemy_idle.yy",},
+    {"name":"spr_mae_retrato","order":54,"path":"sprites/spr_mae_retrato/spr_mae_retrato.yy",},
     {"name":"obj_controle_vila","order":12,"path":"objects/obj_controle_vila/obj_controle_vila.yy",},
     {"name":"obj_cam_follower_inic","order":6,"path":"objects/obj_cam_follower_inic/obj_cam_follower_inic.yy",},
     {"name":"spr_PRESSIONE_E","order":18,"path":"sprites/spr_PRESSIONE_E/spr_PRESSIONE_E.yy",},

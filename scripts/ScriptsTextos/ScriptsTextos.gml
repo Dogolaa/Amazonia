@@ -7,6 +7,14 @@ function scr_textos() {
             ds_grid_add_text("Filho, la dentro voce sera desafiado a provar sua coragem, sabedoria e respeito pelas criaturas lendárias.", spr_pai_retrato_falando, 0, "Pai", snd_pai_voice);
             ds_grid_add_text("Fale com sua mae na casa a cima, ela te explicara melhor!", spr_pai_retrato_falando, 0, "Pai", snd_pai_voice);
             break;
+			
+		case "Mae":
+			ds_grid_add_text("Oi filho, o grande dia esta chegando,voce se preparou anos para isso!", spr_mae_retrato, 0, "Mae", snd_mae_voice);
+			ds_grid_add_text("Ja vi que encontrou seu arco !", spr_pai_retrato, 0, "Pai", snd_pai_voice);
+	        ds_grid_add_text("Sim pai,estou pronto para realizar minha passagem para a vida adulta", spr_player_retrato, 1, "Eu", snd_player_voice);
+	        ds_grid_add_text("Filho, la dentro voce sera desafiado a provar sua coragem, sabedoria e respeito pelas criaturas lendárias.", spr_pai_retrato_falando, 0, "Pai", snd_pai_voice);
+			ds_grid_add_text("Fale com sua mae na casa a cima, ela te explicara melhor!", spr_pai_retrato_falando, 0, "Pai", snd_pai_voice);
+		
     }
 }
 

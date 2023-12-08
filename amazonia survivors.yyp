@@ -31,7 +31,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.0.121",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"spr_solo","path":"sprites/spr_solo/spr_solo.yy",},},
@@ -96,6 +96,7 @@
     {"id":{"name":"snd_imagem1","path":"sounds/snd_imagem1/snd_imagem1.yy",},},
     {"id":{"name":"spr_enemy_idle","path":"sprites/spr_enemy_idle/spr_enemy_idle.yy",},},
     {"id":{"name":"obj_effects_hub","path":"objects/obj_effects_hub/obj_effects_hub.yy",},},
+    {"id":{"name":"spr_mae_retrato","path":"sprites/spr_mae_retrato/spr_mae_retrato.yy",},},
     {"id":{"name":"obj_controle_vila","path":"objects/obj_controle_vila/obj_controle_vila.yy",},},
     {"id":{"name":"obj_mandioca","path":"objects/obj_mandioca/obj_mandioca.yy",},},
     {"id":{"name":"obj_menu_pause","path":"objects/obj_menu_pause/obj_menu_pause.yy",},},
