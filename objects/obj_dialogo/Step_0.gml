@@ -15,7 +15,7 @@ if keyboard_check_pressed(ord("E")) {
 			pagina++;
 			audio_stop_all();
 		}else{
-			//global.dialogo = false;
+			global.dialogo = false;
 			audio_stop_all();
 			audio_play_sound(snd_trilha_vila,3,true);
 			instance_destroy();

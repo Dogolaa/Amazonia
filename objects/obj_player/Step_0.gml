@@ -6,7 +6,7 @@
 
 }
 */
-
+//if (global.dialogo == false) {
 
 var tecla_direita = keyboard_check(ord("D"));
 var tecla_esquerda = keyboard_check(ord("A"));
@@ -16,6 +16,7 @@ var tecla_baixo = keyboard_check(ord("S"));
 var teclas = (tecla_direita - tecla_esquerda != 0) || (tecla_baixo - tecla_cima != 0);
 
 var dist_saida = 5;
+var dist_ir_templo = 15;
 var tecla_sair = keyboard_check(ord("E"));
 var teclas_sair = (tecla_sair != 0);
 
@@ -26,6 +27,10 @@ if (distance_to_object(obj_saida) <= dist_saida && tecla_sair != 0  && instance_
 	ini_write_real("nivel", "0", global.nivel)
 	ini_close()
     room_restart();
+}
+
+if (distance_to_object(obj_ir_templo) <= dist_ir_templo){
+    room_goto(Room2);
 }
 
 depth = -y;
@@ -88,6 +93,7 @@ if place_meeting(x, y, obj_parent_enemy) {
 	vspeed = clamp(vspeed, max_velc * 0.3, -max_velc * 0.3);
 }
 
+//}
 
 /*move_dir = point_direction(0, 0, tecla_direita - tecla_esquerda, tecla_baixo - tecla_cima);
 
@@ -117,6 +123,21 @@ if (place_meeting(x, y + velv, obj_parede))
 y += velv;
 */
 
+
+
+#region Dialogo
+if distance_to_object(obj_par_npcs) <= 10{
+	if keyboard_check_pressed(ord("E")) /*and global.dialogo == false*/{
+		var _npc = instance_nearest(x,y, obj_par_npcs);
+		var _dialogo = instance_create_layer(x,y, "Dialogo", obj_dialogo);
+		_dialogo.npc_nome = _npc.nome;
+	}
+}
+#endregion
+
+
+
+
 //coisas da vida//
 if global.vida <=0 {
 	instance_destroy(my_weapon)
@@ -126,3 +147,5 @@ if global.vida <=0 {
 	speed = 0
 	room_goto(Room3);
 }
+
+
