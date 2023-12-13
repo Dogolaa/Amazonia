@@ -2,6 +2,9 @@
 // You can write your code in this editor
 
 if room == Room1 {
+	fx_blur = layer_get_fx("Effect_1")
+	fx_vig = layer_get_fx("Effect_2")
+	fx_vig_strength = fx_get_parameter(fx_vig, "g_VignetteEdges")
     if modo <= 1 {
         if keyboard_check_pressed(vk_anykey) {
             modo = 1
@@ -26,6 +29,7 @@ if room == Room1 {
         }
     }
 } else if room == Room2 {
+	fx_blur = layer_get_fx("Effect_1")
     fx_vig = layer_get_fx("Effect_2")
     fx_set_parameter(fx_vig, "g_VignetteEdges", fx_vig_strength)
     if fx_vig_strength[1] < 0.9 {

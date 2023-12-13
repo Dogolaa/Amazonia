@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "vila",
+    "path": "folders/Objetos/mapa/vila.yy",
   },
   "parentObjectId": {
     "name": "obj_par_npcs",

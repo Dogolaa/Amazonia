@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "obj_proj",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_parede","path":"objects/obj_parede/obj_parede.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_parent_wall","path":"objects/obj_parent_wall/obj_parent_wall.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_inimigo_2","path":"objects/obj_inimigo_2/obj_inimigo_2.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_inimigo","path":"objects/obj_inimigo/obj_inimigo.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "player",
+    "path": "folders/Objetos/player.yy",
   },
   "parentObjectId": null,
   "persistent": false,

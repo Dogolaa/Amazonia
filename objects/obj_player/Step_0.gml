@@ -49,26 +49,22 @@ if (tecla_direita) {
 
 if tecla_cima {
     vspeed -= acc;
-}
-else if tecla_baixo {
+}else if tecla_baixo {
     vspeed += acc;
-}
-else{
+}else{
 	vspeed *= 0.8
 }
 
 if tecla_direita {
     hspeed += acc;
-}
-else if tecla_esquerda {
+}else if tecla_esquerda {
     hspeed -= acc;
-}
-else{
+}else{
     hspeed *= 0.8;
 }
 
 breaking = 20;
-while (place_meeting(x + hspeed, y, obj_parede) && breaking > 0) {
+while (place_meeting(x + hspeed, y, obj_parent_wall) && breaking > 0) {
     breaking--;
     hspeed *= 0.9;
     if breaking <= 1 {
@@ -76,7 +72,7 @@ while (place_meeting(x + hspeed, y, obj_parede) && breaking > 0) {
     }
 }
 breaking = 20;
-while (place_meeting(x + hspeed, y + vspeed, obj_parede) && breaking > 0) {
+while (place_meeting(x + hspeed, y + vspeed, obj_parent_wall) && breaking > 0) {
     breaking--;
     vspeed *= 0.9;
     if breaking <= 1 {
@@ -84,9 +80,12 @@ while (place_meeting(x + hspeed, y + vspeed, obj_parede) && breaking > 0) {
     }
 }
 
-speed = min(speed, max_velc);
+hspeed = clamp(hspeed, -max_velc, max_velc);
+vspeed = clamp(vspeed, -max_velc, max_velc);
+
 if place_meeting(x, y, obj_parent_enemy) {
-    speed = min(speed, max_velc * 0.3);
+    hspeed = clamp(hspeed, max_velc * 0.3, -max_velc * 0.3);
+	vspeed = clamp(vspeed, max_velc * 0.3, -max_velc * 0.3);
 }
 
 

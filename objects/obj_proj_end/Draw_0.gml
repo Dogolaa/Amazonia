@@ -6,7 +6,7 @@ speed *= 0.9
 image_xscale = max(image_xscale * 0.9, 0.6)
 image_yscale = image_xscale
 
-if place_meeting(x, y, obj_parede){
+if place_meeting(x, y, obj_parent_wall){
 	speed = 0 
 }
 

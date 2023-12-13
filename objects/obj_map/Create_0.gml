@@ -1,4 +1,3 @@
-global.srf_weapons = surface_create(room_width, room_height)
 
 
 cell_t = 32;
