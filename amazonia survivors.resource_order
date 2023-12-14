@@ -42,7 +42,6 @@
     {"name":"snd_pai_voice","order":5,"path":"sounds/snd_pai_voice/snd_pai_voice.yy",},
     {"name":"spr_arrow","order":8,"path":"sprites/spr_arrow/spr_arrow.yy",},
     {"name":"spr_menu","order":9,"path":"sprites/spr_menu/spr_menu.yy",},
-    {"name":"Room0","order":1,"path":"rooms/Room0/Room0.yy",},
     {"name":"obj_inimigo","order":2,"path":"objects/obj_inimigo/obj_inimigo.yy",},
     {"name":"obj_arco","order":1,"path":"objects/obj_arco/obj_arco.yy",},
     {"name":"spr_tocha","order":10,"path":"sprites/spr_tocha/spr_tocha.yy",},
