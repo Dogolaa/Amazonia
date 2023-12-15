@@ -18,9 +18,3 @@ inicializar = false;
 caractere = 0;
 alarm[0] = 1;
 
-
-
-
-
-
-

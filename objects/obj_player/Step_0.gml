@@ -89,8 +89,8 @@ hspeed = clamp(hspeed, -max_velc, max_velc);
 vspeed = clamp(vspeed, -max_velc, max_velc);
 
 if place_meeting(x, y, obj_parent_enemy) {
-    hspeed = clamp(hspeed, max_velc * 0.3, -max_velc * 0.3);
-	vspeed = clamp(vspeed, max_velc * 0.3, -max_velc * 0.3);
+    hspeed = clamp(hspeed, -max_velc * 0.3, max_velc * 0.3);
+	vspeed = clamp(vspeed, -max_velc * 0.3, max_velc * 0.3);
 }
 
 //}
@@ -127,9 +127,10 @@ y += velv;
 
 #region Dialogo
 if distance_to_object(obj_par_npcs) <= 10{
-	if keyboard_check_pressed(ord("E")) /*and global.dialogo == false*/{
+	if keyboard_check_pressed(ord("E")) and global.dialogo == false{
 		var _npc = instance_nearest(x,y, obj_par_npcs);
 		var _dialogo = instance_create_layer(x,y, "Dialogo", obj_dialogo);
+		global.dialogo = true
 		_dialogo.npc_nome = _npc.nome;
 	}
 }

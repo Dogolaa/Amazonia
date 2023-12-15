@@ -33,5 +33,5 @@
     "path": "sprites/spr_saida/spr_saida.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

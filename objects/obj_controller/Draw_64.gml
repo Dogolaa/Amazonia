@@ -6,8 +6,10 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_white);
 
-var nivel_text = "Nivel " + string(global.nivel + 1) + "                                        Inimigos " + string(instance_number(obj_parent_enemy));;
-draw_text(0, 0, nivel_text);
+if room == Room2{
+	var nivel_text = "Nivel " + string(global.nivel) + "                                        Inimigos " + string(instance_number(obj_parent_enemy));;
+	draw_text(0, 0, nivel_text);
+}
 
 
 

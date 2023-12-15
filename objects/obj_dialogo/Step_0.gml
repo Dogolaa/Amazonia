@@ -18,6 +18,7 @@ if keyboard_check_pressed(ord("E")) {
 			global.dialogo = false;
 			audio_stop_all();
 			audio_play_sound(snd_trilha_vila,3,true);
+			global.dialogo = false
 			instance_destroy();
 		}
 	}

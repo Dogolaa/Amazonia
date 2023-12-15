@@ -21,7 +21,12 @@ if room == Room1 {
         if fx_vig_strength[1] <= 0 {
             time_transition += 1 / room_speed
             if time_transition > 2 {
-                room_goto_next()
+				if global.nivel == 1{
+					room_goto_next()
+				}
+				else{
+					room_goto(Room2)
+				}
                 fx_vig = layer_get_fx("Effect_2")
                 fx_set_parameter(fx_vig, "g_VignetteEdges", fx_vig_strength)
                 cos_index = 180
@@ -31,6 +36,7 @@ if room == Room1 {
 } else if room == Room2 {
 	fx_blur = layer_get_fx("Effect_1")
     fx_vig = layer_get_fx("Effect_2")
+	fx_vig_strength = fx_get_parameter(fx_vig, "g_VignetteEdges")
     fx_set_parameter(fx_vig, "g_VignetteEdges", fx_vig_strength)
     if fx_vig_strength[1] < 0.9 {
         fx_vig_strength[1] += 0.02

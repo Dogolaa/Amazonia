@@ -4,7 +4,9 @@ global.max_vida = 100
 global.vida = global.max_vida
 
 global.pontos = 0
-global.nivel = 0
+global.nivel = 1
+
+global.dialogo = false
 
 fx_blur_radius = 0
 cos_index = 0

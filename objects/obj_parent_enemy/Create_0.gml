@@ -21,7 +21,7 @@ cos_animation = 0
 estado = "vazio";
 caminho = path_add();
 velc = 1.0;
-life = 10 * (global.nivel+1);
+life = 10 * (global.nivel);
 hit_alpha = 0;
 hit_color = c_white;
 

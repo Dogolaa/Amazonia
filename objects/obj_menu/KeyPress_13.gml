@@ -2,6 +2,7 @@
 if obj_controller.modo == 1{
 	if(index == 0){
 		obj_controller.modo = 2
+		global.nivrl = 1
 	}
 	else if index == 1{
 		ini_open("save_do_game")
